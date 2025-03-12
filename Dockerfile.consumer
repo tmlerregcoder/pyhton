@@ -1,0 +1,8 @@
+FROM python:3.9
+WORKDIR /app
+
+COPY consume.py /app/
+
+RUN pip install kafka-python faker
+
+CMD [ "python", "consumer.py"]
