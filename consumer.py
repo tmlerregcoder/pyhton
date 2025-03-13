@@ -1,4 +1,4 @@
-from Kafka import KafkaConsumer
+from kafka import KafkaConsumer
 import json
 
 consumer = KafkaConsumer(
